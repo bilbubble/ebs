@@ -90,10 +90,9 @@ $results = query("SELECT * FROM td_chart ORDER BY peringkat_minggu_ini");
     <?php include('../../nav/navbar.php') ?>
 
     <main>
-        <?php include('../../header/header.php') ?>
 
         <section class="container mb-5 pb-5">
-            <div class="row mt-5 mb-4">
+            <div class="row mt-5 pt-5 mb-4">
                 <div class="col mt-5">
                     <h1 class="d-inline border-dark border-bottom border-4 outlined-heading bigger-heading text-shadow-lg">EBS GLOBAL TOP 10&ensp;&ensp;</h1>
                     <p class="fs-3 fw-semibold mt-2">This Week on Chart</p>

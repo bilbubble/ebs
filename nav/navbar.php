@@ -32,11 +32,13 @@
                         <h6 class="m-0 p-0 d-inline">Chart</h6>
                     </a>
                 </li>
-                <li class="nav-item" id="nav-item-programs">
-                    <a class="nav-link px-lg-2 px-xxl-4" href="<?= $BASE_URL ?>programs" id="nav-link-programs">
-                        <h6 class="m-0 p-0 d-inline">Programs</h6>
-                    </a>
-                </li>
+                <?php if (authority_check() !== 'editor') : ?>
+                    <li class="nav-item" id="nav-item-programs">
+                        <a class="nav-link px-lg-2 px-xxl-4" href="<?= $BASE_URL ?>programs" id="nav-link-programs">
+                            <h6 class="m-0 p-0 d-inline">Programs</h6>
+                        </a>
+                    </li>
+                <?php endif ?>
                 <?php if (authority_check() === 'user') : ?>
                     <li class="nav-item" id="nav-item-support">
                         <a class="nav-link px-lg-2 px-xxl-4 me-2 me-xxl-4" href="<?= $BASE_URL ?>user/support" id="nav-link-support">
